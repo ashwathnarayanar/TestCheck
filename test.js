@@ -17,7 +17,7 @@ function launchChromeAndRunLighthouse(url, opts, config = null) {
 }
 
 launchChromeAndRunLighthouse('https://m.kohls.com', opts).then(results => {
-  fs.writeFile('lighthouse/report.html', results, function(err) {
+  fs.writeFile('lighthouse/report_child.html', results, function(err) {
     if (err) { console.log(err); }
   });
 });
